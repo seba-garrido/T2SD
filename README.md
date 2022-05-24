@@ -11,7 +11,7 @@ Jorge Fernández
 
 ## Instrucciones de ejecución:
 
-(Esto faltaría llenar, por si puedes men)
+(Esto faltaría llenar, por si puedes men que no lo entendi bien)
 
 
 
