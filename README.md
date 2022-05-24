@@ -4,11 +4,13 @@ Integrantes:
 
 
 Sebastian Garrido
+
 Jorge Fernández
 
 
 
 Instrucciones de ejecución:
+
 (Esto faltaría llenar, por si puedes men)
 
 
