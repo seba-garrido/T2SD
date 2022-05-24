@@ -9,13 +9,13 @@ Jorge Fernández
 
 
 
-Instrucciones de ejecución:
+## Instrucciones de ejecución:
 
 (Esto faltaría llenar, por si puedes men)
 
 
 
-Preguntas:
+## Preguntas:
 
 
 1. ¿Por qué Kafka funciona bien en este escenario?
