@@ -1,4 +1,4 @@
-# Tarea N°1 Sistemas Distribuidos 2022
+# Tarea N°2 Sistemas Distribuidos 2022
 
 ## Integrantes:
 
