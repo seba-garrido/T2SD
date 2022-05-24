@@ -18,18 +18,15 @@ const login = async(usuario, password) => {
                 })
             }, ],
         })
-
     } catch (err) {
-        console.error("error" + err)
+        console.error("error " + err)
     }
 }
 
 const usuario = (usuario) => {
-    console.log(usuario);
     login(usuario).catch((err) => {
         console.error("error en el login: ", err)
     })
-    return "Enviando a Kafka"
 }
 
 module.exports = { usuario, login };

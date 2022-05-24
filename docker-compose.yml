@@ -1,32 +1,48 @@
-version: '3'
+version: '3.7'
+
+networks:
+  tarea2:
+    driver: bridge
 
 services:
   cliente:
     container_name: cliente
-    build: ../cliente/
-    environment:
-      - kafka=kafka
+    build: ./cliente/
+    networks:
+      - tarea2
     ports:
       - 3000:3000
+    volumes:
+      - ./cliente:/app
+    environment:
+      - kafka=kafka
 
   servidor:
     container_name: servidor
-    build: ../servidor/
-    environment:
-      - kafka=kafka
+    build: ./servidor/
+    networks:
+      - tarea2
     ports:
       - 3001:3001
+    volumes:
+      - ./servidor:/app
+    environment:
+      - kafka=kafka
 
   zookeeper:
     image: 'bitnami/zookeeper:latest'
     environment:
       - ALLOW_ANONYMOUS_LOGIN=yes
+    networks:
+      - tarea2
     ports:
       - 2181:2181
 
   kafka:
     container_name: kafka-server
     image: 'bitnami/kafka:latest'
+    networks:
+      - tarea2
     depends_on:
       - zookeeper
     environment:
@@ -36,3 +52,4 @@ services:
       - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
     ports:
       - 9092:9092
+      - 9093:9093
