@@ -9,11 +9,15 @@ Jorge Fernández
 
 
 
-## Instrucciones de ejecución:
+## Servidor
+El servidor se conecta a Kafka para realizar la autenticación de este y verificar las credenciales y los intentos de inicio de sesión, esto se realiza a través del método GET donde se muestra un arreglo que contiene a los usuarios que se encuentran bloqueados, es posible ver estos usuarios bloqueados en Postman a través de la siguiente URL:
 
-(Esto faltaría llenar, por si puedes men que no lo entendi bien)
+- http://localhost:3001/bloqueo
 
+## Cliente
+El cliente es utilizado para recibir las credenciales de inicio de sesión a través de método POST, se puede utilizar el software Postman e insertar en el body las credenciales correspondientes a ese inicio de sesión, el URL necesario para ingresar a Postman es:
 
+- http://localhost:3000/login
 
 ## Preguntas:
 
